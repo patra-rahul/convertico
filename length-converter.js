@@ -98,7 +98,7 @@ const conversionRates = {
   },
 };
 
-app.post("/convert-length", (req, res) => {
+app.post("/convert", (req, res) => {
   const { value, fromUnit, toUnit } = req.body;
 
   if (!conversionRates[fromUnit] || !conversionRates[toUnit]) {

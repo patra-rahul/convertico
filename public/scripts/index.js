@@ -9,7 +9,7 @@ document.getElementById("submit-btn").addEventListener("click", async () => {
   }
 
   try {
-    const response = await fetch("http://localhost:3000/convert-length", {
+    const response = await fetch("http://localhost:3000/convert", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
