@@ -37,13 +37,13 @@
         <form class="converter-form">
           <label class="field">
             <span>Value</span>
-            <input type="number" placeholder="Enter value" />
+            <input type="number" placeholder="Enter value" id="input-value"/>
           </label>
 
           <div class="select-row">
             <label class="field">
               <span>From</span>
-              <select>
+              <select id="from-unit">
                 <option>millimeter</option>
                 <option>centimeter</option>
                 <option>meter</option>
@@ -57,7 +57,7 @@
 
             <label class="field">
               <span>To</span>
-              <select>
+              <select id="to-unit">
                 <option>millimeter</option>
                 <option>centimeter</option>
                 <option>meter</option>
@@ -71,16 +71,18 @@
           </div>
 
           <div class="actions-row">
-            <button type="button" target="_self">Convert</button>
-            <button type="button" class="reset-btn">Reset</button>
+            <button type="button" target="_self" id="submit-btn">Convert</button>
+            <button type="button" class="reset-btn" id="reset-btn">Reset</button>
           </div>
 
           <div class="result-box" role="status" aria-live="polite">
             <span class="result-label">Converted value</span>
-            <output>—</output>
+            <output id="result" default>--</output>
           </div>
         </form>
       </section>
     </div>
+
+    <script src="./scripts/length.js" defer></script>
   </body>
 </html>
