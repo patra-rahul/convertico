@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Measurement Converter</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Multi-unit converter</p>
+        <h1>Measurement Converter</h1>
+        <p class="hero-text">
+          Convert values across length, weight, and temperature with a clean,
+          easy-to-use interface.
+        </p>
+        <div class="hero-actions">
+          <button type="button" class="hero-chip">
+            <a href="./length.html">Length</a>
+          </button>
+          <button type="button" class="hero-chip">
+            <a href="./weight.html">Weight</a>
+          </button>
+          <button type="button" class="hero-chip">
+            <a href="./temperature.html">Temperature</a>
+          </button>
+        </div>
+      </header>
+
+      <section class="card" aria-labelledby="weight-title">
+        <div class="card-header">
+          <h2 id="weight-title">Weight</h2>
+          <p>Switch between metric and imperial weights.</p>
+        </div>
+
+        <form class="converter-form">
+          <label class="field">
+            <span>Value</span>
+            <input type="number" placeholder="Enter value" />
+          </label>
+
+          <div class="select-row">
+            <label class="field">
+              <span>From</span>
+              <select>
+                <option>milligram</option>
+                <option>gram</option>
+                <option>kilogram</option>
+                <option>ounce</option>
+                <option>pound</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>To</span>
+              <select>
+                <option>milligram</option>
+                <option>gram</option>
+                <option>kilogram</option>
+                <option>ounce</option>
+                <option>pound</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="actions-row">
+            <button type="button">Convert</button>
+            <button type="button" class="reset-btn">Reset</button>
+          </div>
+
+          <div class="result-box" role="status" aria-live="polite">
+            <span class="result-label">Converted value</span>
+            <output>—</output>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
