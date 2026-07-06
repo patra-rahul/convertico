@@ -1,31 +1,30 @@
-document.getElementById("submit-btn").addEventListener("click", () => {
+document.getElementById("submit-btn").addEventListener("click", async () => {
   const inputValue = parseFloat(document.getElementById("input-value").value);
   const fromUnit = document.getElementById("from-unit").value;
   const toUnit = document.getElementById("to-unit").value;
-  
+
   if (isNaN(inputValue)) {
     alert("Please enter a valid number.");
     return;
   }
 
-  try{
+  try {
     const response = await fetch("http://localhost:3000/convert-length", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ value: inputValue, fromUnit, toUnit })
+      body: JSON.stringify({ value: inputValue, fromUnit, toUnit }),
     });
 
     const data = await response.json();
 
     if (data.success) {
-        document.getElementById("result").textContent = data.convertedValue;
-        }
-        else{
-          alert("Conversion failed. Please try again.");
-        }
-  }catch(error){
+      document.getElementById("result").textContent = data.convertedValue;
+    } else {
+      alert("Conversion failed. Please try again.");
+    }
+  } catch (error) {
     console.error("Error:", error);
     alert("An error occurred. Please try again.");
   }
