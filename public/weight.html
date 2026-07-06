@@ -37,44 +37,46 @@
         <form class="converter-form">
           <label class="field">
             <span>Value</span>
-            <input type="number" placeholder="Enter value" />
+            <input type="number" placeholder="Enter value" id="input-value"/>
           </label>
 
           <div class="select-row">
             <label class="field">
               <span>From</span>
-              <select>
-                <option>milligram</option>
-                <option>gram</option>
-                <option>kilogram</option>
-                <option>ounce</option>
-                <option>pound</option>
+              <select id="from-unit">
+                <option value="milligrams">milligram</option>
+                <option value="grams">gram</option>
+                <option value="kilograms">kilogram</option>
+                <option value="ounces">ounce</option>
+                <option value="pounds">pound</option>
               </select>
             </label>
 
             <label class="field">
               <span>To</span>
-              <select>
-                <option>milligram</option>
-                <option>gram</option>
-                <option>kilogram</option>
-                <option>ounce</option>
-                <option>pound</option>
+              <select id="to-unit">
+                <option value="milligrams">milligram</option>
+                <option value="grams">gram</option>
+                <option value="kilograms">kilogram</option>
+                <option value="ounces">ounce</option>
+                <option value="pounds">pound</option>
               </select>
             </label>
           </div>
 
           <div class="actions-row">
-            <button type="button">Convert</button>
-            <button type="button" class="reset-btn">Reset</button>
+            <button type="button" target="_self" id="submit-btn">Convert</button>
+            <button type="button" class="reset-btn" id="reset-btn">Reset</button>
           </div>
 
           <div class="result-box" role="status" aria-live="polite">
             <span class="result-label">Converted value</span>
-            <output>—</output>
+            <output id="result" default>--</output>
           </div>
         </form>
       </section>
     </div>
+
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
