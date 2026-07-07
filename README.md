@@ -1,5 +1,7 @@
 # Convertico 🔄
 
+https://github.com/user-attachments/assets/caf2ca31-150c-45bd-9603-48017b23ba0a
+
 A fast, lightweight unit converter web application for converting lengths, weights, and temperatures. Built with Node.js/Express backend and vanilla JavaScript frontend.
 
 ## Features
