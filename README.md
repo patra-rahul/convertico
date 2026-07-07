@@ -1,6 +1,6 @@
 # Convertico 🔄
 
-<video src="https://github.com/user-attachments/assets/caf2ca31-150c-45bd-9603-48017b23ba0a" autoplay muted loop playsinline width="100%"></video>
+<img width="2100" height="1532" alt="Screen Recording 2026-07-07 at 9 32 32 AM" src="https://github.com/user-attachments/assets/262ad7de-ee3a-454e-8309-47b5457a5baa" />
 
 A fast, lightweight unit converter web application for converting lengths, weights, and temperatures. Built with Node.js/Express backend and vanilla JavaScript frontend.
 
